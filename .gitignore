@@ -1,0 +1,43 @@
+
+# General
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache folders
+.cache/
+.config/**/.cache/
+.config/**/cache/
+
+# Neovim
+.config/nvim/.git/
+.config/nvim/plugin/packer_compiled.lua
+
+# Hyprland runtime
+.config/hypr/.session
+.config/hypr/*.lock
+
+# Waybar runtime
+.config/waybar/*.pid
+
+# Secrets (VERY IMPORTANT)
+*.key
+*.pem
+*.crt
+*.env
+*.secret
+credentials.json
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+
+# Git
+.git/
