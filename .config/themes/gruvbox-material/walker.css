@@ -1,6 +1,9 @@
-@define-color selected-text #c0df44;
-@define-color text #929292;
-@define-color base #000000;
-@define-color border #9bd46a;
-@define-color foreground #929292;
-@define-color background #000000;
+/* =========================
+ * Walker – Gruvbox Dark Base
+ * ========================= */
+@define-color base             #1d2021; /* background base */
+@define-color background       #1d2021; /* same as base for consistency */
+@define-color foreground       #ebdbb2; /* main text */
+@define-color text             #d5c4a1; /* secondary text / muted */
+@define-color selected-text    #b8bb26; /* highlight / selection */
+@define-color border           #83a598; /* accents / border */
