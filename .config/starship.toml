@@ -1,0 +1,46 @@
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "zen_black"
+
+# ─────────────────────────────
+# Prompt Character
+# ─────────────────────────────
+
+[character]
+success_symbol = "[󰄛 ❯](fg:primary)"
+error_symbol   = "[󰄛 ❯](fg:error)"
+vimcmd_symbol  = "[󰄛 ❮](fg:dim)"
+# ─────────────────────────────
+# Directory
+# ─────────────────────────────
+[directory]
+truncation_length = 4
+style = "fg:primary"
+
+# ─────────────────────────────
+# Git
+# ─────────────────────────────
+[git_branch]
+style = "fg:secondary"
+
+[git_status]
+style = "fg:secondary"
+
+# ─────────────────────────────
+# Time (optional, subtle)
+# ─────────────────────────────
+[time]
+disabled = true
+style = "fg:dim"
+
+# ─────────────────────────────
+# Palette
+# ─────────────────────────────
+
+[palettes.zen_black]
+primary   = "#EDEDED"
+secondary = "#9A9A9A"
+dim       = "#6F6F6F"
+error     = "#E06C75"
+
