@@ -1,37 +1,34 @@
-
-
 /* =========================
- * Catppuccin Mocha – Base
+ * Dracula – Base
  * ========================= */
-@define-color background        #000000; /* Base */
-@define-color foreground        #cdd6f4; /* Text */
+@define-color background        #282A36; /* Background */
+@define-color foreground        #F8F8F2; /* Foreground */
 
 /* =========================
  * Muted / secondary
  * ========================= */
-@define-color foreground-dim    #a6adc8; /* Subtext0 */
-@define-color foreground-muted  #7f849c; /* Overlay1 */
-@define-color surface           #313244; /* Surface0 */
+@define-color foreground-dim    #6272A4; /* Comment */
+@define-color foreground-muted  #44475A; /* Selection */
+@define-color surface           #44475A; /* Current line */
 
 /* =========================
  * Accents (restrained)
  * ========================= */
-@define-color accent            #b4befe; /* Lavender */
-@define-color accent-strong     #f5e0dc; /* Rosewater */
+@define-color accent            #BD93F9; /* Purple */
+@define-color accent-strong     #FF79C6; /* Pink */
 
 /* =========================
  * Semantic colors
  * ========================= */
-@define-color success           #a6e3a1; /* Green */
-@define-color warning           #f9e2af; /* Yellow */
-@define-color error             #f38ba8; /* Red */
-@define-color info              #89b4fa; /* Blue */
+@define-color success           #50FA7B; /* Green */
+@define-color warning           #F1FA8C; /* Yellow */
+@define-color error             #FF5555; /* Red */
+@define-color info              #8BE9FD; /* Cyan */
 
 /* =========================
  * Workspace states
  * ========================= */
-@define-color workspace              #313244; /* Surface0 */
-@define-color workspace-active       #b4befe; /* Lavender */
-@define-color workspace-text         #cdd6f4; /* Text */
-@define-color workspace-active-text  #1e1e2e; /* Base */
-
+@define-color workspace              #44475A; /* Inactive */
+@define-color workspace-active       #BD93F9; /* Active */
+@define-color workspace-text         #F8F8F2; /* Text */
+@define-color workspace-active-text  #282A36; /* Background */
