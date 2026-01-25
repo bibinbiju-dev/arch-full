@@ -8,7 +8,7 @@
  * Muted / secondary
  * ========================= */
 @define-color foreground-dim    #6272A4; /* Comment */
-@define-color foreground-muted  #44475A; /* Selection */
+@define-color foreground-muted  #6272a4; /* Selection */
 @define-color surface           #44475A; /* Current line */
 
 /* =========================
