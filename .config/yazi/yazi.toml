@@ -1,0 +1,49 @@
+
+[manager]
+# Show hidden files by default
+show_hidden = true
+
+# Natural sorting (file2 before file10)
+sort_by = "natural"
+sort_sensitive = false
+sort_dir_first = true
+
+# Layout
+linemode = "size"
+show_symlink = true
+scrolloff = 4
+
+# Mouse is optional but useful
+mouse_events = true
+
+[preview]
+# Enable preview pane
+tab_size = 2
+max_width = 600
+max_height = 900
+
+[opener]
+# Text editor (Neovim)
+edit = [
+  { run = "nvim \"$@\"", desc = "Neovim", block = true }
+]
+
+# Open files with default system handler
+open = [
+  { run = "xdg-open \"$@\"", desc = "Open", for = "linux" }
+]
+
+# Image viewer
+image = [
+  { run = "xdg-open \"$@\"", desc = "Image viewer" }
+]
+
+# Video player
+video = [
+  { run = "mpv \"$@\"", desc = "MPV", block = false }
+]
+
+# PDF
+pdf = [
+  { run = "zathura \"$@\"", desc = "Zathura", block = false }
+]

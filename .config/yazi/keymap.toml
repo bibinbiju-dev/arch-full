@@ -1,0 +1,83 @@
+
+# ========== MANAGER ==========
+[[manager.prepend_keymap]]
+on = ["h"]
+run = "leave"
+desc = "Go to parent directory"
+
+[[manager.prepend_keymap]]
+on = ["l"]
+run = "enter"
+desc = "Enter directory / open file"
+
+[[manager.prepend_keymap]]
+on = ["j"]
+run = "down"
+
+[[manager.prepend_keymap]]
+on = ["k"]
+run = "up"
+
+[[manager.prepend_keymap]]
+on = ["gg"]
+run = "top"
+
+[[manager.prepend_keymap]]
+on = ["G"]
+run = "bottom"
+
+[[manager.prepend_keymap]]
+on = ["<Esc>"]
+run = "quit"
+
+# File operations
+[[manager.prepend_keymap]]
+on = ["y"]
+run = "yank"
+desc = "Copy"
+
+[[manager.prepend_keymap]]
+on = ["d"]
+run = "delete"
+desc = "Delete"
+
+[[manager.prepend_keymap]]
+on = ["p"]
+run = "paste"
+desc = "Paste"
+
+[[manager.prepend_keymap]]
+on = ["r"]
+run = "rename"
+desc = "Rename"
+
+# Toggle hidden files
+[[manager.prepend_keymap]]
+on = ["."]
+run = "toggle_hidden"
+desc = "Toggle hidden files"
+
+# Search
+[[manager.prepend_keymap]]
+on = ["/"]
+run = "search"
+desc = "Search files"
+
+# Tabs
+[[manager.prepend_keymap]]
+on = ["t"]
+run = "tab_create"
+
+[[manager.prepend_keymap]]
+on = ["H"]
+run = "tab_switch -1"
+
+[[manager.prepend_keymap]]
+on = ["L"]
+run = "tab_switch 1"
+
+# Open in editor
+[[manager.prepend_keymap]]
+on = ["o"]
+run = "open"
+desc = "Open with default"
