@@ -1,11 +1,10 @@
 return {
 	{
 		"Mofiqul/dracula.nvim",
-		priority = 1000,
 		config = function()
 			require("dracula").setup({
-				transparent_bg = false,
 				italic_comment = true,
+				transparent_bg = true,
 			})
 		end,
 	},
@@ -13,7 +12,7 @@ return {
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "drappuccin",
+			colorscheme = "dracula",
 		},
 	},
 }
