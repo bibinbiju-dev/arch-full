@@ -4,9 +4,9 @@
   "position": "top",
   "spacing": 3,
   "height": 23,
-  "margin-top": 1,
-  "margin-right": 5,
-  "margin-left": 5,
+  "margin-top": 0,
+  "margin-right": 0,
+  "margin-left": 0,
   "modules-center": ["custom/omarchy", "hyprland/workspaces"],
   "modules-left": [
     "clock",
