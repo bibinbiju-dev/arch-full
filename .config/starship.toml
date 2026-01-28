@@ -1,46 +1,41 @@
+palette = "dracula"
 
-"$schema" = 'https://starship.rs/config-schema.json'
-
-palette = "zen_black"
-
-# ─────────────────────────────
-# Prompt Character
-# ─────────────────────────────
+[aws]
+style = "bold orange"
 
 [character]
-success_symbol = "[󰄛 ❯](fg:primary)"
-error_symbol   = "[󰄛 ❯](fg:error)"
-vimcmd_symbol  = "[󰄛 ❮](fg:dim)"
-# ─────────────────────────────
-# Directory
-# ─────────────────────────────
-[directory]
-truncation_length = 4
-style = "fg:primary"
+error_symbol = "[λ](bold red)"
+success_symbol = "[λ](bold green)"
 
-# ─────────────────────────────
-# Git
-# ─────────────────────────────
+[cmd_duration]
+style = "bold yellow"
+
+[directory]
+style = "bold green"
+
 [git_branch]
-style = "fg:secondary"
+style = "bold pink"
 
 [git_status]
-style = "fg:secondary"
+style = "bold red"
 
-# ─────────────────────────────
-# Time (optional, subtle)
-# ─────────────────────────────
-[time]
-disabled = true
-style = "fg:dim"
+[hostname]
+style = "bold purple"
 
-# ─────────────────────────────
-# Palette
-# ─────────────────────────────
+[username]
+format = "[$user]($style) on "
+style_user = "bold cyan"
 
-[palettes.zen_black]
-primary   = "#EDEDED"
-secondary = "#9A9A9A"
-dim       = "#6F6F6F"
-error     = "#E06C75"
-
+# Define Dracula color palette
+[palettes.dracula]
+background = "#282a36"
+current_line = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
+cyan = "#8be9fd"
+green = "#50fa7b"
+orange = "#ffb86c"
+pink = "#ff79c6"
+purple = "#bd93f9"
+red = "#ff5555"
+yellow = "#f1fa8c"

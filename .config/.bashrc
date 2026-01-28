@@ -12,5 +12,3 @@ source ~/.local/share/omarchy/default/bash/rc
 alias c='clear'
 alias ani='ani-cli'
 alias tkill='tmux kill-server'
-
-. "$HOME/.local/share/../bin/env"
