@@ -1,6 +1,6 @@
-# python setup for nvim
+## python setup for nvim
 
-## Method 1
+### Method 1
 
 1. Create your project folder :[mkdir ~/folder_name]
 2. cd into the folder
@@ -23,7 +23,7 @@
 
 1. Activate the the project venv each time you enter the project just by the source cmd [source .venv/bin/activate (do this inside the project folder)]
 
-## Method 2
+### Method 2
 
 Create an json file in the project folder with this json code
 
@@ -35,7 +35,7 @@ Create an json file in the project folder with this json code
 
 [list out the installed python versions viva ls /usr/bin/python*]
 
-## Method 3
+### Method 3
 
 There is a better way to slove this than method 2
 

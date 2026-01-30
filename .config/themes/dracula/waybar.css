@@ -1,7 +1,7 @@
 /* =========================
  * Dracula – Base
  * ========================= */
-@define-color background        #282A36; /* Background */
+@define-color background        #000; /* Background */
 @define-color foreground        #F8F8F2; /* Foreground */
 
 /* =========================
