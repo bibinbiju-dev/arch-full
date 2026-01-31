@@ -150,7 +150,7 @@ mise list python
 
 ⚠ **Warning**
 
-- `pythonPath` overrides `mise`
+- `mise` overrides `pythonpath`
 - Prefer `.venv` + `pyrightconfig.json`
 
 ---
