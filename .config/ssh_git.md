@@ -1,4 +1,3 @@
-
 # 🔐 Complete Linux SSH + GitHub SSH + Fail2Ban Guide
 
 This document includes:
@@ -24,6 +23,7 @@ ls ~/.ssh
 ```
 
 Look for:
+
 - id_ed25519
 - id_ed25519.pub
 - id_rsa
@@ -79,7 +79,7 @@ Copy the entire output.
 
 Go to:
 
-https://github.com/settings/keys
+<https://github.com/settings/keys>
 
 1. Click **New SSH Key**
 2. Add title (e.g., "My Laptop")
@@ -403,13 +403,13 @@ id_ed25519.pub
 
 # 7️⃣ Security Summary
 
-| Feature | Purpose |
-|----------|----------|
-| SSH Keys | Strong authentication |
-| Disable Password Login | Prevent brute force |
-| Disable Root Login | Reduce attack surface |
-| Fail2Ban | Auto-block attackers |
-| Change SSH Port | Reduce bot noise |
+| Feature                | Purpose               |
+| ---------------------- | --------------------- |
+| SSH Keys               | Strong authentication |
+| Disable Password Login | Prevent brute force   |
+| Disable Root Login     | Reduce attack surface |
+| Fail2Ban               | Auto-block attackers  |
+| Change SSH Port        | Reduce bot noise      |
 
 ---
 
