@@ -9,3 +9,9 @@
 4. sudo mv ~/Pictures/logo.png
 5. sudo mkinitcpio -P
 6. reboot
+
+## To use an entirely different plymouth
+
+1. Download and extract the plymouth theme form say gnome or any other place
+2. move the extracted folder to the location /usr/share/plymouth/themes/arch-mac-style[change the folder name accordinglly ]
+3. then run the command : [sudo plymouth-set defalut-theme arch-mac-style -R]

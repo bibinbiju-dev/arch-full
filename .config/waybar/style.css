@@ -17,7 +17,7 @@
 #waybar {
   background-color: @background;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 /* -----------------------------------------------------
@@ -41,8 +41,8 @@
  * Workspaces (clean underline style)
  * ----------------------------------------------------- */
 #workspaces button {
-  padding: 0 8px;
-  margin: 0 4px;
+  padding: 0 4px;
+  margin: 0 2px;
   min-width: 18px;
   background-color: transparent;
   color: @workspace-text;
@@ -55,7 +55,9 @@
 
 #workspaces button.active {
   color: @accent-strong;
-  border-bottom: 2px solid @accent-strong;
+  /* border-bottom: 2px solid @accent-strong; */
+  background-color: #51127a;
+  border-radius: 5px;
 }
 
 /* -----------------------------------------------------
@@ -126,7 +128,7 @@
  * ----------------------------------------------------- */
 #custom-screenrecording-indicator {
   color: @info;
-  margin: 0 6px;
+  margin: 0 2px;
 }
 
 #custom-screenrecording-indicator.active {
