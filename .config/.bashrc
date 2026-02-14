@@ -11,4 +11,8 @@ source ~/.local/share/omarchy/default/bash/rc
 # alias p='python'
 alias c='clear'
 alias ani='ani-cli'
-alias tkill='tmux kill-server'
+alias tk='tmux kill-server'
+alias tt='tmux'
+alias n='nvim'
+
+. "$HOME/.local/share/../bin/env"
