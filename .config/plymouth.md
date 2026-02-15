@@ -14,4 +14,4 @@
 
 1. Download and extract the plymouth theme form say gnome or any other place
 2. move the extracted folder to the location /usr/share/plymouth/themes/arch-mac-style[change the folder name accordinglly ]
-3. then run the command : [sudo plymouth-set defalut-theme arch-mac-style -R]
+3. then run the command : [sudo plymouth-set-default-theme arch-mac-style -R]
