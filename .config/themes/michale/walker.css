@@ -1,6 +1,10 @@
-@define-color selected-text #AA85E0; /* Text on selected item */
-@define-color text          #F8F8F2; /* Normal text */
-@define-color base          #000000; /* Base background */
-@define-color border        #BD93F9; /* Dracula purple */
-@define-color foreground    #F8F8F2; /* Foreground text */
-@define-color background    #121212; /* Background */
+
+/* 🦇 Ultra Dark Dracula */
+
+@define-color selected-text #BD93F9;
+@define-color text          #DCDCDC;
+@define-color base          #080A0F; 
+@define-color border        #BD93F9;
+@define-color foreground    #F8F8F2;
+@define-color background    #0B0D12;
+
