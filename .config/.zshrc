@@ -36,14 +36,9 @@ zinit light Aloxaf/fzf-tab
 # Suggestions & highlighting
 # ==================================================
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-syntax-highlighting
-
 #Starship
-zinit light starship/starship 
 eval "$(starship init zsh)"
-
-
-
+zinit light zsh-users/zsh-syntax-highlighting
 # ==================================================
 # Keybindings
 # ==================================================
