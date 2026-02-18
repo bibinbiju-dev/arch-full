@@ -10,7 +10,7 @@ return {
       -- sign = { "󰫎 " },
       sign = true,
       width = "block",
-      icons = { "󰼏 ", "󰎨 ", "󰼐 ", "󰎲 ", "󰼑 ", "󰎴 " },
+      icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
       position = "overlay",
     },
 
