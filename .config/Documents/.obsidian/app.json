@@ -1,0 +1,9 @@
+{
+  "showUnsupportedFiles": true,
+  "openBehavior": "file:",
+  "showHiddenFiles": true,
+  "tabSize": 4,
+  "spellcheck": false,
+  "promptDelete": false,
+  "vimMode": true
+}
