@@ -3,18 +3,18 @@ return {
   event = { "BufReadPost", "BufNewFile" }, -- lazy load when opening files
   config = function()
     require("colorizer").setup({
-      filetypes = { "*" },
+      filetypes = { "css", "html", "config" },
       user_default_options = {
-        RGB      = true,
-        RRGGBB   = true,
-        names    = true,
+        RGB = true,
+        RRGGBB = true,
+        names = true,
         RRGGBBAA = true,
         AARRGGBB = true,
-        rgb_fn   = true, -- rgb(), rgba()
-        hsl_fn   = true, -- hsl(), hsla()
-        css      = true,
-        css_fn   = true,
-        mode     = "background",
+        rgb_fn = true, -- rgb(), rgba()
+        hsl_fn = true, -- hsl(), hsla()
+        css = true,
+        css_fn = true,
+        mode = "background",
       },
     })
   end,

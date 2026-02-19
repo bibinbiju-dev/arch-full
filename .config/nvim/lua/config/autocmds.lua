@@ -6,13 +6,13 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
-vim.cmd([[
-  augroup LiveServerAutoSave
-    autocmd!
-    autocmd TextChanged,TextChangedI * silent! wall
-  augroup END
-]])
-
+-- vim.cmd([[
+--   augroup LiveServerAutoSave
+--     autocmd!
+--     autocmd TextChanged,TextChangedI * silent! wall
+--   augroup END
+-- ]])
+--
 
 --WARN: Disable diagnostics only for Markdown files
 vim.api.nvim_create_autocmd("FileType", {
@@ -22,12 +22,15 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-
-
 vim.api.nvim_create_autocmd("BufReadPost", {
   pattern = {
-    "*.png", "*.jpg", "*.jpeg", "*.webp",
-    "*.gif", "*.ico", "*.svg",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.webp",
+    "*.gif",
+    "*.ico",
+    "*.svg",
   },
   callback = function()
     local file = vim.fn.expand("%:p")
@@ -39,4 +42,3 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     end)
   end,
 })
-

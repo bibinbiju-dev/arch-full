@@ -47,10 +47,10 @@ return {
     --   img_folder = "assets/img",
     -- },
     --
-    -- picker = {
-    --   name = "telescope.nvim",
-    -- },
-    --
+    picker = {
+      name = "telescope.nvim",
+    },
+
     templates = {
       folder = "~/Documents/templates",
       date_format = "%d-%m-%Y",
@@ -60,42 +60,52 @@ return {
     -- see below for full list of options 👇
     notes_subdir = "",
     daily_notes = {
-      folder = "NOTES/Daily/",
+      folder = "Daily/",
       date_format = "%d-%m-%Y",
       alias_format = "%B %-d, %y",
       default_tags = { "daily-notes" },
       template = "daily.md",
     },
 
-    note_id_func = function(title)
-      local id = os.date("%Y%m%d%H%M")
+    -- note_id_func = function(title)
+    --   local id = os.date("%Y%m%d%H%M")
+    --
+    --   if title ~= nil then
+    --     title = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+    --     return id .. "-" .. title
+    --   else
+    --     return id
+    --   end
+    -- end,
 
-      if title ~= nil then
-        title = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
-        return id .. "-" .. title
-      else
-        return id
+    note_id_func = function(title)
+      local notes_dir = vim.fn.expand("~/Documents/")
+      local counter_file = notes_dir .. ".note_counter"
+
+      vim.fn.mkdir(notes_dir, "p")
+
+      local current = 0
+      if vim.fn.filereadable(counter_file) == 1 then
+        current = tonumber(vim.fn.readfile(counter_file)[1]) or 0
       end
+
+      local new_id = string.format("%05d", current + 1)
+
+      vim.fn.writefile({ tostring(current + 1) }, counter_file)
+
+      if title then
+        title = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+        return new_id .. "-" .. title
+      end
+
+      return new_id
+    end,
+    follow_url_func = function(url)
+      vim.fn.jobstart({ "xdg-open", url })
+    end,
+
+    follow_img_func = function(img)
+      vim.fn.jobstart({ "xdg-open", img })
     end,
   },
-
-  -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
-  -- URL it will be ignored but you can customize this behavior here.
-  ---@param url string
-  follow_url_func = function(url)
-    -- Open the URL in the default web browser.
-    -- vim.fn.jobstart({"open", url})  -- Mac OS
-    vim.fn.jobstart({ "xdg-open", url }) -- linux
-    -- vim.cmd(':silent exec "!start ' .. url .. '"') -- Windows
-    -- vim.ui.open(url) -- need Neovim 0.10.0+
-  end,
-
-  -- Optional, by default when you use `:ObsidianFollowLink` on a link to an image
-  -- file it will be ignored but you can customize this behavior here.
-  ---@param img string
-  follow_img_func = function(img)
-    -- vim.fn.jobstart { "qlmanage", "-p", img }  -- Mac OS quick look preview
-    vim.fn.jobstart({ "xdg-open", img }) -- linux
-    -- vim.cmd(':silent exec "!start ' .. url .. '"') -- Windows
-  end,
 }
