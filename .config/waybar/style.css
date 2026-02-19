@@ -42,7 +42,7 @@
  * ----------------------------------------------------- */
 #workspaces button {
   padding: 0 4px;
-  margin: 0 2px;
+  /* margin: 0 2px; */
   min-width: 18px;
   background-color: transparent;
   color: @workspace-text;
@@ -56,7 +56,7 @@
 #workspaces button.active {
   color: @accent-strong;
   /* border-bottom: 2px solid @accent-strong; */
-  background-color: #51127a;
+  /* background-color: #51127a; */
   border-radius: 5px;
 }
 
